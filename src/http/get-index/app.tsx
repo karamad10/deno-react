@@ -4,6 +4,11 @@ declare global {
   namespace JSX {
     interface IntrinsicElements {
       p: any;
+      div: any;
+      nav: any;
+      li: any;
+      ul: any;
+      a: any;
     }
   }
 }
@@ -16,23 +21,17 @@ type State = {
 
 //@ts-ignore
 export class App extends Component<Props, State> {
-  state = {
-    time: new Date(),
-  };
-
   componentDidMount() {
-    setInterval(() => this.tick(), 1000);
+    console.log("MOUNTED");
   }
 
-  tick() {
-    //@ts-ignore
-    this.setState({
-      time: new Date(),
-    });
-  }
+  // routes = {
+  //   '/': HomePage,
+  //   '/profile': Profile,
+  // };
 
   render() {
     //@ts-ignore
-    return <p>The current time is {this.state.time.toLocaleTimeString()}</p>;
+    return <div>x</div>;
   }
 }
