@@ -14,6 +14,7 @@ type State = {
   time: Date;
 };
 
+//@ts-ignore
 export class App extends Component<Props, State> {
   state = {
     time: new Date(),
