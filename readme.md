@@ -1,4 +1,3 @@
-<img src="https://static.begin.app/learn-node-ssr/readme-banner.png" width="561">
 
 [![Begin build status](https://buildstatus.begin.app/music-a15/status.svg)](https://begin.com)
 
